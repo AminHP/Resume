@@ -1,0 +1,154 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.80]{geometry}
+\setlength{\hintscolumnwidth}{3.1cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+
+\name{Mohammad Amin}{Haghpanah}
+% \title{Resumé title}                               % optional, remove / comment the line if not wanted
+% \address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+98~(937)~403~9221}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{mdan.hagh@gmail.com}                               % optional, remove / comment the line if not wanted
+% \homepage{github.com/AminHP}                         % optional, remove / comment the line if not wanted
+\social[github][github.com/AminHP]{https://github.com/AminHP}
+\extrainfo{Born on 5 May 1996}                 % optional, remove / comment the line if not wanted
+\photo[80pt][0.4pt]{Picture}
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Try to pay rather than getting paid}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2019 -- Present}{MSc. in Artificial Intelligence}{University of Tehran}{Tehran, Iran}{}{}
+\cventry{2014 -- 2019}{BSc. in Computer Software Engineering with concentraition on AI}{\newline Iran University of Science and Technology}{Tehran, Iran}{GPA: 3.65}{}
+\cventry{2010 -- 2014}{Diploma in Mathematics and Physics Discipline}{Allame Helli 3 High School}{Tehran, Iran}{GPA: 4}{Affiliated with National Organization for Development of Exceptional Talents}
+
+\section{Experience}
+\cventry{2015 -- Present}{Owner}{\href{https://github.com/koala-team}{\color{blue}{Koala Team}}}{Tehran, Iran}{}{}
+
+\cventry{2017/10 -- 2018/10}{Senior Backend Developer (C\#)}{Green and Silver Leaves}{Tehran, Iran}{\newline I was working on Mobayyen project. It's a big project and I've developed its web service from scratch. Also I've improved most parts of the project's framework}{}
+
+\cventry{2016/07 -- 2016/09}{Backend Developer (Python)}{\href{http://gandom.co}{\color{blue}{Gandom}}}{Tehran, Iran}{\newline I was working on ChiChiKoo project (a service similar to foursquare) and I developed a RESTful API with Flask}{}
+
+\cventry{2015/08 -- 2015/09}{Backend Developer (Python)}{Bajiru}{Tehran, Iran}{\newline Bajiro was a startup in resturant managment area. I was working on a RESTful Flask API as a trainee}{}
+
+\section{Teaching Experience}
+\cventry{Fall 2018}{Teacher's Assistant: Software Engineering (Dr. Mehrdad Ashtiani)}{University of Science and Technology}{Tehran, Iran}{}{}
+\cventry{Spring 2018}{Teacher's Assistant: Computational Artificial Intelligence (Dr. Naser Mozayani)}{University of Science and Technology}{Tehran, Iran}{}{}
+\cventry{Spring 2018}{Teacher's Assistant: Advanced Programming of C\# (Dr. Sauleh Etemadi)}{University of Science and Technology}{Tehran, Iran}{}{}
+\cventry{Spring 2016}{Teacher's Assistant: Advanced Programming of C++ (Dr. Zeinab Movahedi)}{University of Science and Technology}{Tehran, Iran}{}{}
+
+\section{Volunteer Experience}
+\cventry{2016/06 -- 2017/05}{Membership in Scientific Association of Computer Engineering Department}{University of Science and Technology}{Tehran, Iran}{}{}
+
+\pagebreak
+
+\section{Skills}
+\cvitem{Self Learning}{I think this is the most important skill of mine and I've learned my other skills by it.}
+\cvitem{Programming}{Python, C\#, C++, C, Erlang, Java, JavaScript, HTML, VHDL, MATLAB, Pascal, PHP}
+\cvitem{Frameworks, Libraries, Utilities}{Django REST, ASP.NET, Flask, Keras, Keras-RL, OpenCV, Qt, PyQt, SDL, UML, Visual Paradigm, Telegram Client, Telegram Bot, Android Development, Xilinx ISE}
+\cvitem{Others}{Linux, Git, TFS, Trello, SQL, MongoDB, Riak, Redis, Docker, NGINX}
+
+
+\section{Selected Projects}
+\cvitem{2018 -- Present}{\textbf{Musical Chord Detection:} An application that detects \href{https://en.wikipedia.org/wiki/Musical_note}{\color{blue}{musical notes}} in a musical signal (created by Piano, Guitar, and etc). It's a very difficult problem and still isn't solved completely. Typically there exists 108 different notes and detecting a single note is kind of simple but the problem shows up when some notes are played simultaneously (chords). Imagine if someone plays 10 Piano notes with his 10 fingers, then there could be almost 100\^{}10 possible different chords. Solving this problem using basic ANN algorithms is not actually possible.}
+
+\cvitem{2017 -- Present}{\textbf{Chillin:} A tool for creating game AI competitions. It consists of multiple components, including a \href{https://github.com/koala-team/Chillin-PyServer}{\color{blue}{server framework}} written in Python, three client components written in \href{https://github.com/koala-team/Chillin-PyClient}{\color{blue}{Python}}, \href{https://github.com/koala-team/Chillin-CppClient}{\color{blue}{C++}}, and \href{https://github.com/koala-team/Chillin-JavaClient}{\color{blue}{Java}}. Also, Chillin came up with a \href{https://github.com/koala-team/Chillin-Monitor-2}{\color{blue}{3D monitor}} to spectate the games and watch what happens in the field. \newline \href{https://2017.chillinwars.ir}{\color{blue}{ChillinWars 2017}} and \href{https://chillinwars.ir}{\color{blue}{ChillinWars 2019}} utilized this tool to create games for their competitions. Some examples can be found \href{https://github.com/Chillin-Examples}{\color{blue}{here}}.}
+
+\cvitem{2017 -- Present}{\textbf{Koala Serializer:} A tool similar to \href{https://developers.google.com/protocol-buffers}{\color{blue}{Google Protobuf}} that enables Chillin framework to be much more automated and simpler. \href{https://github.com/koala-team/serializer}{\color{blue}{Github link}}.}
+
+\cvitem{2019}{\textbf{InstaRobot:} An \href{https://cafebazaar.ir/app/com.instagram.instarobot/?l=en}{\color{blue}{Android application}} that provides some tools for Instagram users.}
+
+\cvitem{2018}{\textbf{Facial Expression Recognition (Bachelor Final Project):} A new solution for solving the famous Facial Expression Recognition problem using MLP and feature extraction. It detects 8 emotions (anger, contempt, disgust, fear, happiness, neutral, sadness, surprise) with an average accuracy of 97\% on CK+ dataset.  \href{https://www.dropbox.com/s/i6pkzhfzp8jkpaz/FinalProjectArticle_FER.pdf?dl=0}{\color{blue}{Article link}}.}
+
+\cvitem{Spring 2017}{\textbf{Inverted Pendulum:} A system which simulates the famous \href{https://en.wikipedia.org/wiki/Inverted_pendulum}{\color{blue}{Inverted Pendulum}} problem written in Python. Also a fuzzy controller is implemented that tries to keep the pendulum inverted in the system.  \href{https://github.com/AminHP/fuzzy_inverted_pendulum}{\color{blue}{Github link}}.}
+
+\cvitem{Fall 2016}{\textbf{Pourse:} A web service and application that provides some information about Stocks for Software Engineering course project. The project's backend was implemented using Erlang and Python programming languages and Riak databse.  \href{https://gitlab.com/Pourse/Server}{\color{blue}{Gitlab link}}.}
+
+\cvitem{2015 -- 2017}{\textbf{IJust:} An open-source online ACM judge. \href{https://github.com/koala-team/ijust_server}{\color{blue}{Github link}}, \href{https://ijust.ir}{\color{blue}{ijust.ir}}.}
+
+\cvitem{Spring 2015}{\textbf{OCR Site:} A simple website which provides single character OCR written in Python for Advanced Programming course project. the recognizer was a MLP and all parts of it were implemented from scratch (including ANN trainer).  \href{https://github.com/AminHP/OCR-Site}{\color{blue}{Github link}}.}
+
+\cvitem{Fall 2014}{\textbf{PyTanks:} A multiplayer network game implemented by Python for Basic Programming course project. Also an AI (using Q-Learning) was implemented for tanks to help them run away from bombs. \href{https://github.com/mak-elmos/PyTanks}{\color{blue}{Github link}}.}
+
+\cvitem{2011 -- 2013}{\textbf{Robot Path Planning:} Robocup 3D Soccer Simulation is a seniors' tournament which is a part of robotics tournaments like IranOpen. Its goal is to write a code that manages 11 \href{https://en.wikipedia.org/wiki/Nao_(robot)}{\color{blue}{NAO robots}} to play soccer in a simulated environment. My job in the team was creating and implementing a new path planning algorithm for these robots. Our TDP which was sent for World Championship 2013 competitions and got qualified, can be found \href{https://www.dropbox.com/s/nkwcxfojufvafgt/3d_tdp_s4m.pdf?dl=0}{\color{blue}{here}}.  \href{https://gitlab.com/4/4d-simulation}{\color{blue}{Gitlab link}}.}
+
+\cvitem{2011 -- 2012}{\textbf{Car Tracking:} A dynamic system that detects cars and their speeds by image processing and checks whether the cars move between highway lines. \href{https://github.com/AminHP/CarTracking}{\color{blue}{Github link}}.}
+
+\cvitem{2011 -- 2012}{\textbf{Inverted Pendulum:} A system which simulates the famous \href{https://en.wikipedia.org/wiki/Inverted_pendulum}{\color{blue}{Inverted Pendulum}} problem written in C++. Also an AI is implemented that uses Q-Learning to keep the pendulum inverted in the system. \href{https://github.com/AminHP/InvertedPendulum}{\color{blue}{Github link}}.}
+
+\cvitem{2010 -- 2011}{\textbf{Othello:} An object-oriented client/server platform which provides an interface for Othello AI programs written in C++. Also an AI was implemented using minimax algorithm.}
+
+\section{Github Contributions}
+\cvitem{\href{https://github.com/cudamat/cudamat}{\color{blue}cudamat}}{Added correlate function}
+\cvitem{\href{https://github.com/rochacbruno/flasgger}{\color{blue}flasgger}}{Added "importing other spec files" support}
+
+\section{Awards \& Honors}
+\cventry{2014 -- 2019}{Software field}{Iran University of Science and Technology}{Ranked Second Place for my total average among all entrants of year "2014"}{}{}
+\cventry{2014 -- 2019}{Artificial Intelligence field}{Iran University of Science and Technology}{Ranked Second Place for my total average among all entrants of year "2014"}{}{}
+\cventry{May 2017}{Harekat Ceremony}{Iran University of Science and Technology}{Ranked First Place}{A competition among all scientific associations of the university}{}
+\cventry{Apr 2013}{RoboCup IranOpen 2013}{3D Soccer Simulation League}{Certificate of Participation}{}{}
+\cventry{Mar 2013}{RoboCup World Championship 2013}{3D Soccer Simulation League}{Qualified}{}{}
+\cventry{Feb 2013}{Farzanegan RoboCup 2013}{3D Soccer Simulation League}{Ranked First Place}{}{}
+\cventry{Apr 2012}{RoboCup DutchOpen 2012}{3D Soccer Simulation League}{Certificate of Participation}{}{}
+\cventry{Apr 2012}{RoboCup IranOpen 2012}{3D Soccer Simulation League}{Certificate of Participation}{}{}
+\cventry{2012}{Seminar on Science and Technology}{Allame Helli 3 High School}{Ranked First Place}{}{}
+\cventry{2010}{Seminar on Science and Technology}{Allame Helli 2 Middle School}{Ranked First Place}{}{}
+
+\pagebreak
+
+\section{Interests}
+\cvlistdoubleitem{Machine Learning}{Machine Vision}
+\cvlistdoubleitem{Signal Processing}{Game Development}
+\cvlistdoubleitem{Project and Team Management}{Software Engineering}
+\cvlistdoubleitem{Artificial Neural Networks}{Robotics}
+\cvlistdoubleitem{Object Oriented Programming}{Functional Programming}
+\cvlistdoubleitem{Dota2}{Foosball}
+
+\section{Personality}
+\cvlistitem{\href{https://mycreativetype.com/type/maker}{\color{blue}{https://mycreativetype.com/type/maker}}}
+\cvlistitem{\href{https://www.16personalities.com/istj-personality}{\color{blue}{https://www.16personalities.com/istj-personality}}}
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
